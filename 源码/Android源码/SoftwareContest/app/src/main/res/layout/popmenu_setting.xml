@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/tools"
+              xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/popmenu_draw_setting_bg"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/popmenu_draw_setting_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50.0dip"
+                        android:alpha="0.8"
+                        android:gravity="center"
+                        android:text="设置线条粗细"
+                        android:textColor="#ffffff"
+                        android:textSize="15.0dip"></TextView>
+
+                    <EditText
+                        android:id="@id/pannel_edit_paintwidth"
+                        android:layout_width="50.0dip"
+                        android:layout_height="22.0dip"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginRight="20dip"
+                        android:layout_marginTop="1dp"
+                        android:background="#ffffff"
+                        android:cursorVisible="false"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="10"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="60dp"
+                    android:background="#ffffff"/>
+
+                <com.rey.material.widget.Slider
+                    android:id="@id/pannel_seekbar_paintwidth"
+                    style="@style/Material.Widget.Slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    app:sl_maxValue="100"
+                    app:sl_minValue="0"
+                    app:sl_value="50"
+                    materialdesign:sl_discreteMode="true"
+                    materialdesign:sl_minValue="1"
+                    materialdesign:sl_primaryColor="#208ade"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50.0dip"
+                        android:alpha="0.8"
+                        android:gravity="center"
+                        android:text="设置缩放比例"
+                        android:textColor="#ffffff"
+                        android:textSize="15.0dip"/>
+
+                    <EditText
+                        android:id="@id/pannel_edit_scale"
+                        android:layout_width="50.0dip"
+                        android:layout_height="22.0dip"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginRight="20dip"
+                        android:layout_marginTop="1dp"
+                        android:background="#ffffff"
+                        android:cursorVisible="false"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="50"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="60dp"
+                    android:background="#ffffff"/>
+
+
+                <com.rey.material.widget.Slider
+                    android:id="@id/pannel_seekbar_scale"
+                    style="@style/Material.Widget.Slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    app:sl_maxValue="100"
+                    app:sl_minValue="0"
+                    app:sl_value="50"
+                    materialdesign:sl_discreteMode="true"
+                    materialdesign:sl_minValue="1"
+                    materialdesign:sl_primaryColor="#208ade"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@id/pannel_btn_pickcolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50.0dip"
+                        android:alpha="0.8"
+                        android:gravity="center"
+                        android:text="选择画笔颜色"
+                        android:textColor="#ffffff"
+                        android:textSize="15.0dip"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0dip"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50.0dip"
+                        android:alpha="0.8"
+                        android:gravity="center"
+                        android:text="自动识别"
+                        android:textColor="#ffffff"
+                        android:textSize="15.0dip"
+                        />
+
+                    <!--<android.support.v7.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:checked="false"
+                        android:theme="@style/MySwitch"
+                        />-->
+                    <com.rey.material.widget.Switch
+                        android:id="@id/pannel_btn_recognize"
+                        style="@style/Material.Widget.Switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dip"
+                        android:checked="false"
+                        android:gravity="center"
+                        materialdesign:sw_thumbColor="@drawable/sw_thumbcolor_selector"
+                        materialdesign:sw_trackColor="@drawable/sw_trackcolor_selector"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0dip"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50.0dip"
+                        android:alpha="0.8"
+                        android:gravity="center"
+                        android:text="缩放"
+                        android:textColor="#ffffff"
+                        android:textSize="15.0dip"/>
+
+                    <com.rey.material.widget.Switch
+                        android:id="@id/pannel_btn_scale"
+                        style="@style/Material.Widget.Switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dip"
+                        android:checked="false"
+                        android:gravity="center"
+                        materialdesign:sw_thumbColor="@drawable/sw_thumbcolor_selector"
+                        materialdesign:sw_trackColor="@drawable/sw_trackcolor_selector"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0dip"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

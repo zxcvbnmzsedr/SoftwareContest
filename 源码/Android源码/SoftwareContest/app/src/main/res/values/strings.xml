@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">同步手绘板</string>
+    <string name="soft_connect">点击连接</string>
+    <string name="soft_connect_failure">连接失败</string>
+    <string name="soft_connect_success">连接成功</string>
+    <string name="soft_mouse">Mouse</string>
+    <string name="soft_screen">Screen</string>
+    <string name="soft_write">Write</string>
+    <string name="soft_ppt">PPT</string>
+    <string name="ipAddress">IP地址</string>
+    <string name="ipPort">端口号</string>
+    <string name="btn_color_picker">fff</string>
+</resources>

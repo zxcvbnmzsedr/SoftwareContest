@@ -1,0 +1,39 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.czmec.softwarecontest">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:name=".crashexception.CrashApplication"
+        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity android:name=".launcher.view.LauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".mouse.view.MouseActivity"/>
+        <activity
+            android:name=".drawpannel.PannelActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".signaturepad.views.SignaturePadActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".ppt.PPTActivity"/>
+
+        <service android:name=".service.SocketService"/>
+        <service android:name=".service.CheckConnectionService"/>
+    </application>
+</manifest>

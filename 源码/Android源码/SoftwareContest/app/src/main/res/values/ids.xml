@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btn_connecting" type="id">false</item>
+    <item name="btn_mouse" type="id">false</item>
+    <item name="btn_connect" type="id">false</item>
+    <item name="btn_ppt" type="id">false</item>
+    <item name="btn_screen" type="id">false</item>
+    <item name="btn_write" type="id">false</item>
+    <item name="edit_ipAddress" type="id">false</item>
+    <item name="edit_ipPort" type="id">false</item>
+    <item name="internet_btn_connect" type="id">false</item>
+
+    <!-- 画板相关 -->
+    <item name="pannel_main" type="id">false</item>
+    <item name="pannel_main_bottom" type="id">false</item>
+    <item name="pannel_main_bottom_re" type="id">false</item>
+    <item name="pannel_bottom" type="id">false</item>
+    <item name="pannel_setting" type="id">false</item>
+    <item name="pannel_btn_setting" type="id">false</item>
+    <item name="pannel_btn_redo" type="id">false</item>
+    <item name="pannel_btn_undo" type="id">false</item>
+    <item name="pannel_clear" type="id">false</item>
+    <item name="pannel_seekbar_paintwidth" type="id">false</item>
+    <item name="pannel_seekbar_scale" type="id">false</item>
+    <item name="pannel_img_paintcolor" type="id">false</item>
+    <item name="pannel_edit_paintwidth" type="id">false</item>
+    <item name="pannel_edit_scale" type="id">false</item>
+    <item name="pannel_btn_pickcolor" type="id">false</item>
+    <item name="pannel_btn_recognize" type="id">false</item>
+    <item name="pannel_btn_scale" type="id">false</item>
+    <!-- 颜色选择器相关-->
+    <item name="iv_color_picker" type="id">false</item>
+    <item name="iv_color_range" type="id">false</item>
+    <item name="cpv" type="id">false</item>
+    <item name="layout_rgbcolor" type="id">false</item>
+    <item name="pick_btn_center" type="id">false</item>
+    <item name="pick_btn_cancel" type="id">false</item>
+
+    <!-- 签名板相关-->
+    <item name="signature_main" type="id">false</item>
+    <item name="signature_btn_ok" type="id">false</item>
+    <item name="signature_btn_clear" type="id">false</item>
+    <!--PPT面板相关-->
+    <item name="ppt_play" type="id">false</item>
+    <item name="ppt_left" type="id">false</item>
+    <item name="ppt_right" type="id">false</item>
+
+    <!--鼠标面板相关-->
+    <item name="mouse_middleButton" type="id">false</item>
+    <item name="mouse_leftButton" type="id">false</item>
+    <item name="mouse_rightButton" type="id">false</item>
+    <item name="mouse_touch" type="id">false</item>
+</resources>

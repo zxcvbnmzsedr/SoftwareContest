@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+	<FrameLayout android:id="@id/mouse_middleButton"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:background="@drawable/mouse_middle"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true" 
+		android:maxHeight="120dp"
+		android:minHeight="120dp" 
+		android:minWidth="60dp" 
+		android:maxWidth="60dp" />
+	
+	<FrameLayout android:id="@id/mouse_leftButton"
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 android:background="@drawable/mouse_left"
+				 android:layout_alignParentLeft="true"
+				 android:layout_toLeftOf="@id/mouse_middleButton"
+				 android:layout_alignParentBottom="true"
+				 android:maxHeight="120dp"
+				 android:minHeight="120dp"
+				 android:layout_below="@+id/mouse_touch"/>
+	
+	<FrameLayout android:id="@id/mouse_rightButton"
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 android:background="@drawable/mouse_right"
+				 android:layout_alignParentRight="true"
+				 android:layout_alignParentBottom="true"
+				 android:layout_toRightOf="@id/mouse_middleButton"
+				 android:maxHeight="120dp"
+				 android:minHeight="120dp"
+				 android:layout_below="@+id/mouse_touch"/>
+	
+    <FrameLayout
+        android:id="@id/mouse_touch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:background="@drawable/mouse_background"
+        android:layout_alignParentLeft="true" 
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/mouse_middleButton"
+		android:layout_alignParentTop="true"/>
+    
+   
+
+</RelativeLayout>

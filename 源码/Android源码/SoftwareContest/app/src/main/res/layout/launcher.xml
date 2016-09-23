@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_weight="7.0"
+        android:background="@drawable/soft_background"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="0.0dip"
+            android:layout_weight="2"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dip"
+            android:layout_marginRight="40dip"
+            android:src="@drawable/soft_name"/>
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.5"/>
+
+        <TextView
+            android:id="@id/btn_connect"
+            android:layout_width="160.0dip"
+            android:layout_height="40.0dip"
+            android:background="@drawable/soft_connect_btn_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/soft_connect"
+            android:textColor="#ffffff"
+            android:textSize="16.0dip"/>
+
+
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="0.0dip"
+            android:layout_weight="2.0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="4.5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@id/btn_mouse"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/soft_btn_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10.0dip">
+
+            <ImageView
+                android:layout_width="60.0dip"
+                android:layout_height="60.0dip"
+                android:src="@drawable/soft_mouse"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:gravity="center"
+                android:text="@string/soft_mouse"
+                android:textColor="#ff676767"
+                android:textSize="16.0dip"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="#ffe1e1e1"/>
+
+        <LinearLayout
+            android:id="@id/btn_ppt"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/soft_btn_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10.0dip">
+
+            <ImageView
+                android:layout_width="60.0dip"
+                android:layout_height="60.0dip"
+                android:src="@drawable/soft_ppt"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:gravity="center"
+                android:text="@string/soft_ppt"
+                android:textColor="#ff676767"
+                android:textSize="16.0dip"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="#ffe1e1e1"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="4.5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@id/btn_screen"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/soft_btn_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10.0dip">
+
+            <ImageView
+                android:layout_width="60.0dip"
+                android:layout_height="60.0dip"
+                android:src="@drawable/soft_screen"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:gravity="center"
+                android:text="@string/soft_screen"
+                android:textColor="#ff676767"
+                android:textSize="16.0dip"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="#ffe1e1e1"/>
+
+        <LinearLayout
+            android:id="@id/btn_write"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/soft_btn_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10.0dip">
+
+            <ImageView
+                android:layout_width="60.0dip"
+                android:layout_height="60.0dip"
+                android:src="@drawable/soft_write"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:gravity="center"
+                android:text="@string/soft_write"
+                android:textColor="#ff676767"
+                android:textSize="16.0dip"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
